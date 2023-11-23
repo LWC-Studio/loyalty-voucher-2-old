@@ -1,0 +1,94 @@
+.voucher-type2-container {
+    --content-bg-color: #23262B;
+    --content-font-color: #fff;
+    --expiry-bg-color: #FF6937;
+    --expiry-font-color: #fff;
+
+    background-color: #fff;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.image {
+    background: url('https://image.s4.sfmc-content.com/lib/fe30117276640474731270/m/1/afea3493-512f-4de8-bf5f-0a261e89657f.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 38%;
+}
+
+.content-container {
+    background: var(--content-bg-color);
+    flex-grow: 1;
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caption {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--content-font-color);
+}
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--content-font-color);
+}
+
+.fav-icon {
+    margin-left: 8px;
+}
+
+.fav-icon svg {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.fav-icon path{
+    fill: #fff;
+    stroke: #000;
+    stroke-width: 0.5px;
+}
+
+.fav-icon.active path{
+    fill: #E24949;
+}
+
+.pill-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.pill {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 140%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px 12px;
+}
+
+.pill.one {
+    color: var(--expiry-font-color);
+    background: var(--expiry-bg-color);
+}
+
+.pill.two {
+    color: #FFFFFF;
+    background: #4141E7;
+}
